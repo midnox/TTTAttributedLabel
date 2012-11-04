@@ -75,7 +75,7 @@ static inline NSTextCheckingType NSTextCheckingTypeFromUIDataDetectorType(UIData
     return textCheckingType;
 }
 
-static inline NSDictionary * NSAttributedStringAttributesFromLabel(TTTAttributedLabel *label) {
+NSDictionary * NSAttributedStringAttributesFromLabel(TTTAttributedLabel *label) {
     NSMutableDictionary *mutableAttributes = [NSMutableDictionary dictionary]; 
     
     CTFontRef font = CTFontCreateWithName((__bridge CFStringRef)label.font.fontName, label.font.pointSize, NULL);

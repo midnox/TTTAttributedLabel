@@ -23,6 +23,9 @@
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
 
+@class TTTAttributedLabel;
+NSDictionary * NSAttributedStringAttributesFromLabel(TTTAttributedLabel *label);
+
 /**
  Vertical alignment for text in a label whose bounds are larger than its text bounds
  */
